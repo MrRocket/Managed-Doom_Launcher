@@ -281,7 +281,6 @@ namespace Managed_Doom_Launcher
                 Engine_Location = Properties.Settings.Default.Engine_Location;
                 BtnEngineLocation.Visible = false;
                 btnLaunch.Visible = true;
-           //     ENGINE_INFO.Visible = true;
                 Logo_Box.Visible = false;
 
                 try
@@ -291,8 +290,6 @@ namespace Managed_Doom_Launcher
                     // If the engine file exists, get its full path for execution.
                     string EngineFile = Path.GetDirectoryName(Application.ExecutablePath);
 
-              //      ENGINE_INFO.Visible = false;
-              //      Engine_Location = ENGINE_INFO.Text;
                     btnLaunch.Visible = true;
 
                     Logo_Box.Visible = true;
@@ -311,31 +308,6 @@ namespace Managed_Doom_Launcher
                 }
 
             }
-
-            //////////// Does an IWAD exsist yet?
-
-            //////////if (lstIWADS.Items.Count < 0)
-            //////////{
-            //////////    btnIWADSLocation.Visible = false;
-            //////////}
-            //////////else if  (lstIWADS.Items.Count == 0)
-            //////////{
-            //////////    btnIWADSLocation.Visible = true;
-       
-            //////////    MessageBox.Show(lstIWADS.Items.Count.ToString("Load a fuckn IWAD Dude!"));
-            //////////    if (lstIWADS.Items.Count == 0)
-            //////////    {
-            //////////        btnIWADSLocation.Visible = true;
-            //////////    }
-            //////////}
-
-            //////// .. where's all the data? where's my button?
-
-            //////// .. :D
-            ////////TODO^
-
-
-
 
             if (File.Exists(@"managed-doom.exe"))
             {
@@ -367,7 +339,6 @@ namespace Managed_Doom_Launcher
                 {
                     this.BtnEngineLocation.Visible = true;
                 }
-
 
             }
         
