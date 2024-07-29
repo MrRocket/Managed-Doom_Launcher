@@ -162,7 +162,7 @@ namespace Managed_Doom_Launcher
         #region //Form Load.. Load any saved settings..
         // Note* previously I had it setup to auto-detect the IWADs if
         // they were located in the engine location.. 
-        // I found this redundent and just added a "Locate IWADs" button instead.
+        // I found this redundent and just added an "Add IWADs Location" button instead.
         // Because of this, there may still be some elements that need removed..
         
         private void frmMain_Load(object sender, EventArgs e)
