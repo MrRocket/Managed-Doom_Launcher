@@ -160,6 +160,11 @@ namespace Managed_Doom_Launcher
         }
 
         #region //Form Load.. Load any saved settings..
+        // Note* previously I had it setup to auto-detect the IWADs if
+        // they were located in the engine location.. 
+        // I found this redundent and just added a "Locate IWADs" button instead.
+        // Because of this, there may still be some elements that need removed..
+        
         private void frmMain_Load(object sender, EventArgs e)
         {
 
@@ -1771,7 +1776,7 @@ namespace Managed_Doom_Launcher
         #endregion
 
         #region //Map# or Episode/Levels..
-        // These Map Combo Boxes are stack on top of one another in the form..
+        // These Map Combo Boxes are stacked on top of one another in the form..
         // Depending on which IWAD is selected, the appropriate one will be displayed.. 
 
         // Maps ComboBox based on Doom2 and its variants - cmbMaps
@@ -3061,14 +3066,10 @@ namespace Managed_Doom_Launcher
 
         private void Logo_Box_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/sinshu/managed-doom/releases/tag/v2.1a");
+            Process.Start("https://github.com/sinshu/managed-doom/releases");
         }
 
-
-
         #endregion
-
-
 
     }
 }
